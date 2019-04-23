@@ -10,4 +10,5 @@ class Artist
     @songs << songs
   end
   
+  
 end

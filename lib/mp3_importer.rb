@@ -5,8 +5,6 @@ class MP3Importer
     @path = path
   end
   
-  #Dir.glob("#{path}/*.mp3")
-
   def files
   
    Dir.entries(path).find_all do |file| 
@@ -20,3 +18,4 @@ class MP3Importer
       Song.new_by_filename(song)
     end
   end
+end
